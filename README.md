@@ -1,5 +1,9 @@
 # agent-approval-gate
 
+[![tests](https://github.com/PlutoYQ-NTU/agent-approval-gate/actions/workflows/tests.yml/badge.svg)](https://github.com/PlutoYQ-NTU/agent-approval-gate/actions/workflows/tests.yml)
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 `agent-approval-gate` is a lightweight Python CLI that classifies proposed shell commands before a local coding agent runs them. It returns a transparent risk level, decision, reasons, and matched rule names.
 
 It is designed for maintainers using Codex CLI, Claude Code, Cline, OpenCode, custom local agents, and remote agent controllers.
@@ -173,6 +177,13 @@ agent-approval-gate "deploy production" --rules examples/rules.example.toml
 
 See [ROADMAP.md](ROADMAP.md).
 
+## Related projects
+
+This repository is part of a small toolkit for local coding-agent workflows and small local LLM evaluation:
+
+- [`agent-approval-gate`](https://github.com/PlutoYQ-NTU/agent-approval-gate): classify command risk before a local coding agent runs shell commands.
+- [`agent-run-report`](https://github.com/PlutoYQ-NTU/agent-run-report): generate Markdown and JSON reports after a local coding-agent run.
+- [`mini-llm-eval-kit`](https://github.com/PlutoYQ-NTU/mini-llm-eval-kit): evaluate small local language models with configurable prompt suites.
 ## Contributing
 
 Issues and pull requests are welcome. Please include example commands, expected risk levels, and the operating system or shell context when reporting rule gaps.

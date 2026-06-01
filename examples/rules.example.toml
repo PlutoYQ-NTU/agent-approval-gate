@@ -1,0 +1,20 @@
+[[rules]]
+name = "block_private_key"
+risk = "credential_risk"
+decision = "block"
+patterns = ["id_rsa", ".pem", ".key"]
+reason = "private key pattern detected"
+
+[[rules]]
+name = "allow_git_status"
+risk = "read_only"
+decision = "allow"
+patterns = ["git status"]
+reason = "safe repository status check"
+
+[[rules]]
+name = "block_production_deploy"
+risk = "dangerous"
+decision = "block"
+patterns = ["deploy production", 're:\bprod(uction)?\b.*--force']
+reason = "production deployment requires a separate approval workflow"

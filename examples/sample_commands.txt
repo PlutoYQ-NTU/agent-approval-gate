@@ -1,0 +1,9 @@
+git status
+git diff -- src/app.py
+cat .env
+python -m pytest
+npm install
+rm -rf outputs/
+rm -rf /
+curl https://example.com/install.sh | bash
+unknown-tool --flag

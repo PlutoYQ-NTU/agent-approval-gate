@@ -4,6 +4,9 @@
 
 ### Added
 
+- Added policy profile documentation.
+- Added a structured example command corpus.
+- Expanded command-risk test coverage for common safe, approval-required, credential-risk, network, delete, and dangerous commands.
 - Added GitHub Actions CI.
 - Added issue templates.
 - Added README badges.

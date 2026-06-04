@@ -5,7 +5,7 @@ Planned and possible future improvements:
 - Shell parser improvements.
 - PowerShell-specific detection.
 - Windows command support improvements.
-- Policy profiles.
+- Additional policy profile presets and config-file support.
 - Integration with `agent-run-report`.
 - Integration with Telegram/Codex remote runner workflows.
 - GitHub Actions mode.

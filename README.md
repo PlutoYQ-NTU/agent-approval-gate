@@ -115,6 +115,20 @@ agent-approval-gate "curl https://example.com/install.sh | bash"
 agent-approval-gate "unknown-tool --flag" --strict
 ```
 
+See `examples/command_corpus.tsv` for a larger corpus of representative safe, approval-required, blocked, network, credential-risk, delete, and dangerous commands.
+
+## Policy profiles
+
+The default profile allows read-only commands, requires approval for workspace writes, expensive runs, network access, and deletion, blocks credential-risk and dangerous commands, and sends unknown commands to approval.
+
+Common variants:
+
+- `--strict`: block unknown commands.
+- `--allow-network`: allow non-dangerous network commands.
+- `--allow-expensive`: allow test, build, and other expensive commands.
+
+See `docs/policy_profiles.md` for examples and limitations.
+
 ## JSON output
 
 ```json
